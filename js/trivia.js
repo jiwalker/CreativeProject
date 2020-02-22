@@ -21,8 +21,9 @@ function onClick(e) {
         return response.json();
       }).then(function(json) {
         let results = "";
-        results += "<div class = 'question-container'>"
+        results += "<div class = 'questions-container'>";
         for (let i=0; i < json.results.length; i++) {
+          results += '<div class = "question-container">';
           results += '<div class="question">' + json.results[i].question + "</div>";
           let answers = []
           if (json.results[i].type === 'multiple'){
@@ -42,7 +43,7 @@ function onClick(e) {
               results += '<div class="incorrect-answer" onClick="style.backgroundColor=\'#c40000\';">' + answers[j] + '</div>'
             }
           }
-          results += '</div>'
+          results += '</div></div>'
             
         }
         results += "</div>";
