@@ -7,206 +7,230 @@ body {
 a {
     color: black;
 }
+button {
+    font-family: 'Arvo';
+    font-size: 1em;
+}
+.question{
+    font-size: x-large;
+}
+.answers{
+    display: inline-block;
+}
+.correct-answer, .incorrect-answer {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  border-radius: 20px;
+  border: 2px solid black;
+  background:  #3AAFA9;
+  padding: 5px;
+  margin: 6px;
+  width: max-content;
+  display: inline-block;
+  
+}
+
 @media only screen and (min-width: 961px) {
    /*These appear on multiple pages */
-.navbar-custom {
-    background-color: #17252A;
-}
-.navbar-custom .navbar-brand,
-.navbar-custom .navbar-text {
-    color: #FEFFFF;
-}
-.header-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #2B7A78;
-}
-.header {
-    height: 60px;
-    font-size: x-large;
-    padding: 10px;
-    color: #FEFFFF;
-}
-.main-content { 
-    display: flex;
-    justify-content: center;
-}
-.column {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-    width: 900px;
-    background-color: #DEF2F1;
-}
-.row {
-    display: inline-block;
-    margin: 0 0 1em;
-    width: 100%;
-}
-.footer-container {
-    background-color: #2B7A78;
-    display: flex;
-    justify-content: center;
-}
-.footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.footer-element{}
-.gitlink {
-    height: 50px;
-    width: 50px;
-}
+  .navbar-custom {
+      background-color: #17252A;
+  }
+  .navbar-custom .navbar-brand,
+  .navbar-custom .navbar-text {
+      color: #FEFFFF;
+  }
+  .header-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #2B7A78;
+  }
+  .header {
+      height: 60px;
+      font-size: x-large;
+      padding: 10px;
+      color: #FEFFFF;
+  }
+  .main-content {
+      display: flex;
+      justify-content: center;
+  }
+  .column {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+      width: 900px;
+      background-color: #DEF2F1;
+  }
+  .row {
+      display: inline-block;
+      margin: 0 0 1em;
+      width: 100%;
+  }
+  .footer-container {
+      background-color: #2B7A78;
+      display: flex;
+      justify-content: center;
+  }
+  .footer{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .footer-element{}
+  .gitlink {
+      height: 50px;
+      width: 50px;
+  }
 
-/* These appear on index.html */
+  /* These appear on index.html */
 
-.intro-main {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: xx-large;
-    padding-bottom: 20px;
-    margin: 15px;
-}
-.intro-item{
-    padding-bottom: 100px;
-    align-items: center;
-}
-.icon {
-    float: left;
-    margin-right: 12.5px;
-    width: 80px;
-    height: 80px;  
-}
-.intro-text {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: x-large;
-}
+  .intro-main {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: xx-large;
+      padding-bottom: 20px;
+      margin: 15px;
+  }
+  .intro-item{
+      padding-bottom: 100px;
+      align-items: center;
+  }
+  .icon {
+      float: left;
+      margin-right: 12.5px;
+      width: 80px;
+      height: 80px;
+  }
+  .intro-text {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: x-large;
+  }
 
-/* These appear on about.html */
+  /* These appear on about.html */
 
-.content-title {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: xx-large;
-    margin-bottom: 10px;
-    border-bottom: 4px solid #3AAFA9;
-}
-.content-item { /* Text */
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: x-large;
-    margin: 25px;
-}
+  .content-title {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: xx-large;
+      margin-bottom: 10px;
+      border-bottom: 4px solid #3AAFA9;
+  }
+  .content-item { /* Text */
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: x-large;
+      margin: 25px;
+  }
 
-/* These appear on explore.html */
+  /* These appear on explore.html */
 
-.explore-container{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: large;
-}
-.builders-container, .projects-container{
-    text-align: center;
-}
-.explore-title{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: xx-large;
-    font-style: oblique;
-}
-.builders, .projects {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: x-large;
-    border: 5px solid white;
-    padding: 5px;
-}
-.builder, .project {
+  .explore-container{
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: large;
+  }
+  .builders-container, .projects-container{
+      text-align: center;
+  }
+  .explore-title{
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: xx-large;
+      font-style: oblique;
+  }
+  .builders, .projects {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: x-large;
+      border: 5px solid white;
+      padding: 5px;
+  }
+  .builder, .project {
 
-}
+  }
 
-/* These appear on Builder pages */
+  /* These appear on Builder pages */
 
-.profile-container {
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.profile-top {
-}
-.cover-image{
-    /* width: 450px;   */
-}
-.profile-pic-container {
-    
-}
-.profile-pic {
-    /* width: 80px;
-    height: 80px;
-    object-fit: fill;
-    border-collapse: separate;
-    border-radius: 50%; */
-}
-.profile-name {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: xx-large;
-}
-.profile-bio-container {
-    font-size: x-large;
-    padding: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.profile-bio, .profile-info, .build {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: large;
-    background-color: #FEFFFF;
-    border: 2px solid #2B7A78; 
-    padding: 5px;
-}
-.profile-info {
+  .profile-container {
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+  .profile-top {
+  }
+  .cover-image{
+      /* width: 450px;   */
+  }
+  .profile-pic-container {
 
-}
-.profile-builds {
+  }
+  .profile-pic {
+      /* width: 80px;
+      height: 80px;
+      object-fit: fill;
+      border-collapse: separate;
+      border-radius: 50%; */
+  }
+  .profile-name {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: xx-large;
+  }
+  .profile-bio-container {
+      font-size: x-large;
+      padding: 10px;
+      font-family: Arial, Helvetica, sans-serif;
+  }
+  .profile-bio, .profile-info, .build {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: large;
+      background-color: #FEFFFF;
+      border: 2px solid #2B7A78;
+      padding: 5px;
+  }
+  .profile-info {
 
-}
-.build {
+  }
+  .profile-builds {
 
-}
-.build-thumbnail {
-    padding: 5px;
-}
-.build-summary {
+  }
+  .build {
 
-}
+  }
+  .build-thumbnail {
+      padding: 5px;
+  }
+  .build-summary {
 
-/* These apply to Build pages */
+  }
 
-.build-container {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: x-large;
-    text-align: center;
-}
-.build-name {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: xx-large;
-}
-.masonry { /* Masonry container */
-    column-count: 2;
-    column-gap: 1em;
-    border:3px solid #17252A;
-    padding:3px;
-}
-.m-photo { /* Masonry bricks or child elements */
-    margin: 0 0 1em;
-    width: 100%;
-}
-.build-info {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: large;
-    margin-bottom: 15px;
-    margin-left: 40px;
-    text-align: left;
-}
-.specs {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: large;
-}
+  /* These apply to Build pages */
+
+  .build-container {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: x-large;
+      text-align: center;
+  }
+  .build-name {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: xx-large;
+  }
+  .masonry { /* Masonry container */
+      column-count: 2;
+      column-gap: 1em;
+      border:3px solid #17252A;
+      padding:3px;
+  }
+  .m-photo { /* Masonry bricks or child elements */
+      margin: 0 0 1em;
+      width: 100%;
+  }
+  .build-info {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: large;
+      margin-bottom: 15px;
+      margin-left: 40px;
+      text-align: left;
+  }
+  .specs {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: large;
+  }
 }
 @media only screen and (min-width: 401px) and (max-width: 960px) {
        /*These appear on multiple pages */
@@ -229,7 +253,7 @@ a {
         padding: 15px;
         color: #FEFFFF;
     }
-    .main-content { 
+    .main-content {
         display: flex;
         justify-content: center;
     }
@@ -242,7 +266,7 @@ a {
         padding: 10px;
     }
     .row {
-        display: inline-block;
+        display: flex;
         margin: 0 0 1em;
         width: 100%;
     }
@@ -273,7 +297,7 @@ a {
         float: left;
         margin-right: 12.5px;
         width: 40px;
-        height: 40px;  
+        height: 40px;
     }
     .intro-text {
         font-family: Arial, Helvetica, sans-serif;
@@ -329,7 +353,7 @@ a {
     }
     .profile-pic-container {
         float: left;
-        
+
     }
     .profile-pic {
         /* width: 80px;
@@ -351,7 +375,7 @@ a {
         font-family: Arial, Helvetica, sans-serif;
         font-size: large;
         background-color: #FEFFFF;
-        border: 2px solid #2B7A78; 
+        border: 2px solid #2B7A78;
         padding: 5px;
     }
     .profile-info {
@@ -420,7 +444,7 @@ a {
         padding: 10px;
         color: #FEFFFF;
     }
-    .main-content { 
+    .main-content {
         display: flex;
         justify-content: center;
     }
@@ -464,7 +488,7 @@ a {
         float: left;
         margin-right: 12.5px;
         width: 40px;
-        height: 40px;  
+        height: 40px;
     }
     .intro-text {
         font-family: Arial, Helvetica, sans-serif;
@@ -520,7 +544,7 @@ a {
     }
     .profile-pic-container {
         float: left;
-        
+
     }
     .profile-pic {
         /* width: 80px;
@@ -542,7 +566,7 @@ a {
         font-family: Arial, Helvetica, sans-serif;
         font-size: large;
         background-color: #FEFFFF;
-        border: 2px solid #2B7A78; 
+        border: 2px solid #2B7A78;
         padding: 5px;
     }
     .profile-info {

@@ -18,13 +18,13 @@
                 <li class="nav-item">
                   <a class="nav-link" href="/index.html">Home</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item">
                   <a class="nav-link" href="/pages/explore.html">Explore</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="/pages/about.html">About</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item active">
                   <a class="nav-link" href="/pages/trivia.html">Trivia</a>
                 </li>
               </ul>
@@ -33,49 +33,34 @@
 
         <div class="header-container">
             <div class="header">
-              Discover Builders and Projects
+              Computer Trivia!
             </div>
         </div>
 
         <div class="main-content">
             <div class="column">
                 <div class="row">
-                    <div class="explore-container">
-                        Click on names and pictures to go the respective builder or build pages!
-                        <div class="builders-container">
-
-                            <div class="explore-title">
-                                Builders
-                            </div>
-                            <div class="builders">
-                                <a href="/pages/builders/jacob.html">
-                                    <div class="builder">
-                                        Jacob Walker
-                                        <div class="builder-pic">
-                                            <img src="/images/covers/jacob.jpg">
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="projects-container">
-                            <div class="explore-title">
-                                Projects and Builds
-                            </div>
-                            <div class="projects">
-                                <a href="builds/jenkins.html">
-                                    <div class="project">
-                                        Old Man Jenkins
-                                        <img src="/images/builds/jenkins/jenkins.jpg">
-                                    </div>                                
-                                </a>
-                            </div>
-                        </div>
+                    This page uses the <a href="http://opentdb.com"> Trivia API </a> to get interesting computer facts.
+                </div>
+                <div class="row">
+                    Change difficulty level: 
+                        <select id="selector">
+                          <option value="any">Any</option>
+                          <option value="easy">Easy</option>
+                          <option value="medium">Medium</option>
+                          <option value="hard">Hard</option>
+                        </select>
+                       
+                </div>
+                <div class="row">
+                    <button id="trivia-generator" class="pure-button pure-button-primary">Generate Trivia!</button>
+                </div>
+                <div class="row">
+                    <div class="trivia-container">
+                        <p id ="trivia-questions"></p>
                     </div>
                 </div>
             </div>
-            
         </div>
 
         <div class="footer-container">
@@ -89,6 +74,7 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="/js/trivia.js"></script>
     </body>
 
 </html>
